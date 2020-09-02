@@ -1,0 +1,63 @@
+
+
+.second-page {
+    background: radial-gradient(#FFFFFF 14.75%, #FAFEF8 56.28%, #D3DFD6 78.54%);
+    height:100vh;
+    padding: 0 4%;
+    h1 {
+        color: #363E33;
+        font-size: 2rem;
+        text-align: center;
+        font-family: $fontMer;
+        padding-top: 70px;
+        padding-bottom: 90px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container {
+        display: flex;
+
+        justify-content: space-between;
+        }
+        .icons {
+            margin-bottom: 15px;
+            text-align: center;
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .text-content {
+            height: auto;
+            width: 350px;
+            border: none;
+            background-color: #FFFFFF;
+            
+            
+            border-radius: 7px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 5px 5px 15px -5px #00000070;
+            
+            h4 {
+                text-align: center;
+                padding-bottom: 40px;
+                color: #98514D;
+                font-family: $fontMer;
+                font-size: 1.25rem;
+            }
+            p {
+                padding: 45px 20px 75px 20px;
+                font-size: 1rem;
+                word-spacing: 0.2em;
+                font-weight: 500;
+                text-align: center;
+                line-height: 1.4em;
+            }
+            
+        } 
+    }
+    #fabrica {
+        height: 65px;
+        margin-bottom: -5px;
+    }

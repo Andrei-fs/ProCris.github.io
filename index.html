@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ProCris</title>
+    <link rel="icon" href="./images/vacuum-cleaner.png">
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>ProCris</h1>
+        </a>
+        <nav>
+            <ul>
+                <!-- <li><a href="#" class="buttons">Tarife</a></li> -->
+                <li><a href="tarife.html" class="buttons">Servicii / Tarife</a></li>
+                <li><a href="contact.html" class="buttons">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section id="first-page">
+        <div id="question-div">
+            <h1>De ce să faci tu curat în timpul tău liber ?</h1>
+
+        </div>
+        <div class="scroll-button">
+            <a href="#second-page" class="btn">
+                Lasă-ne pe noi 
+                
+            </a>
+
+        </div>
+    </section>
+
+
+    <div class="separator"></div>
+
+    <section class="second-page" id="second-page">
+        <h1>Oferim servicii profesionale de curățenie în toate ariile posibile</h1>
+        <div class="container">
+            <div class="block">
+                <div class="icons"><img src="images/casa.png" alt="home-logo"></div>
+                <div class="text-content">
+                    <h4>Locuințe rezidențiale</h4>
+                    
+                    <p>Cu mare prudență și respectând regulile locuinței, reușim să vă curățăm căminul fie el apartament sau casă. </p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="icons"><img src="images/comercial.png" alt="comercial-logo"></div>
+                <div class="text-content">
+                    <h4>Spații comerciale</h4>
+                    
+                    <p>Curățăm, dezinfectăm și igenizăm orice tip de spațiu comercial / clădiri de birouri / clădiri instituționale.
+                    </p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="icons"><img src="images/fabrica.png" alt="fabric-logo" id="fabrica"></div>
+                <div class="text-content">
+                    <h4>Custom</h4>
+                    
+
+                    <p>Suntem deschiși la orice propunere venită din partea clienților și gata de acțiune !</p>
+                     
+                    <br></div>
+            </div>
+        </div>
+
+    </section>
+    <div class="separator"></div>
+
+
+    <section class="third-page">
+        <h1 >Oferte</h1>
+        <div class="left-side">
+            <div class="first-box">
+
+                <p>Procris vine cu o multitudine de oferte propuse care să se poată plia pe nevoile dumneavoastră.</p>
+                <br>
+                <p>
+                    Printre acestea putem enumera cele trei tipuri de curățenie cele mai des alese de clienții noștri
+                </p>
+            </div>
+
+            <div class="second-box">
+                <ul>
+                    <li>Curățenie generală <span>(8 lei/m² )</span> </li>
+                    <li>Curățenie de intreținere <span>(7 lei/m² )</span> </li>
+                    <li>Curățenie după construcție <span>(12 lei/m² )</span> </li>
+                </ul>
+                <br><br>
+                <p id="infos" > Pentru informații amănunțite mergeți la secțiuneiunea <span> <a href="tarife.html"> Servicii / Tarife</a></span></p>
+                <br> 
+            </div>
+        </div>
+
+        <div class="right-side">
+
+            <div class="calculator">
+
+                <br>
+                <select id="list">
+                    <option value="8">Curățenie generală</option>
+                    <option value="7">Curățenie de intreținere</option>
+                    <option value="12">Curățenie după construcție</option>
+                    
+                </select>
+
+                <br><br><br><br>
+
+
+                <div id="suprafata-div">
+                    <label for="text" id="label">Introdu suprafața(m²)</label>
+
+
+                    <input type="number" id="suprafata">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type="button" onclick="calc()">Calculează</button>
+                <p id="suma"></p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <section>
+
+<div class="media-footer">
+    <div><img src="./images/contact.png" alt=""></div>
+    <div>0729 507 683</div>
+</div>
+<div class="media-footer">
+    <div><img src="./images/mail.png" alt=""></div>
+    <div>procrissrl@yahoo.com</div>
+</div>
+<div class="media-footer">
+    <div><a href="https://www.facebook.com/curataminlocultau/" target="_blank"><img src="./images/facebook.png" alt=""></a></div>
+    <div><a href="https://www.facebook.com/curataminlocultau/" target="_blank">SC Procris SRL</a></div>
+</div>
+
+<div class="media-footer">  
+    <div><a href=""> <img src="./images/instagram.png " alt="" ></a></div>
+    <div><a href="">SC Procris SRL</li></a></div>
+</div>
+        </section>
+    </footer>
+</body>
+<script src="script.js">
+</script>
+
+</html>

@@ -1,0 +1,132 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-repeat: no-repeat;
+}
+@import "variables";
+@import "nav";
+@import "home";
+@import "second-page";
+@import "third-page";
+@import "footer";
+@media screen and (max-width: 1205px) {
+    html {
+        font-size: 50%;
+    }
+    nav {
+        font-size: 150%;
+    }
+    #first-page {
+        grid-template-columns: 4% 1fr 4%;
+        grid-template-rows: 2fr 2fr;
+        #question-div {
+            
+            grid-row: 1/2;
+            grid-column: 2/3;
+            text-align: center;
+            align-self: center;
+        }
+        .scroll-button {
+            grid-row: 2/3;
+            grid-column: 2/3;
+            object-fit: cover;
+            justify-self: center;
+            align-self: center;
+            .btn {
+                padding: 10px;
+            }
+        }
+    }
+    .second-page {
+        height: auto;
+        h1 {
+            padding: 40px ;
+            font-size: 200%;
+        }
+        .container {
+            align-items: center;
+            flex-direction: column;
+            .text-content {
+                width: 300px;
+                h4 {
+                    font-size: 2rem;
+                }
+                p {
+                    padding: 40px;
+                    font-size: 2rem;
+                    letter-spacing: 0.2px;
+                }
+            }
+        }
+    }
+    .third-page{
+        flex-direction: column;
+        align-items: center;
+        background-image: cover;
+        padding-top: 0 ;
+        height: auto;
+        
+        h1{
+            font-size: 5rem;
+            border: none;
+            padding-right: 0;
+            
+        }
+        .left-side{
+            border-right:none;
+            
+            .first-box{
+                padding-top: 10px;
+                p{
+                    text-align: center;
+                    font-size:1.75rem;
+                    letter-spacing: 0.1rem;
+                    padding-bottom: 20px;
+                }   
+            }
+            .second-box{
+                width: 100%;
+                text-align: center;
+                
+                
+                ul{
+                    padding-top: 40px;
+                    list-style: none;
+                    
+
+                    li{
+                        width: auto;
+                        font-size:2rem;
+                        
+                    }
+                }
+
+                p{
+                    padding-top: 40px;
+                    font-size: 1.5rem;
+                    line-height: 2em;
+                }
+            }
+        }
+        .right-side{
+            flex: 2;
+            font-size: 170%;
+            
+            .calculator button{
+                font-size: 2rem;
+            }
+        }
+    }
+
+}

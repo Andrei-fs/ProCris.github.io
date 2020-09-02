@@ -1,0 +1,47 @@
+.contact-body {
+  height: 95vh;
+  background: linear-gradient(122.77deg, #FFFFFF 14.75%, #FAFEF8 56.28%, #D3DFD6 78.54%);
+  background-size: cover;
+  padding-top: 80px;
+}
+.contact-body .center-container {
+  width: 75%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-color: #FFFFFF;
+  box-shadow: 5px 5px 15px -5px #00000070;
+  padding: 0 25px;
+}
+.contact-body .center-container img {
+  width: 32px;
+  height: 32px;
+}
+.contact-body .center-container h2 {
+  padding: 30px;
+  border-bottom: 1px solid lightgray;
+  font-family: "Merriweather", serif;
+  color: #363E33;
+}
+.contact-body .center-container .social {
+  padding: 20px 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contact-body .center-container .social h3 {
+  color: #98514D;
+  padding: 3%;
+}
+.contact-body .center-container .social .numere {
+  padding: 10px;
+  color: #98514D;
+  font-weight: bold;
+}
+.contact-body .center-container .social .social-media-links {
+  margin-top: 25px;
+}
+.contact-body .center-container .social .social-media-links .mail {
+  margin-top: 20px;
+  padding-bottom: 40px;
+}

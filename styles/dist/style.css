@@ -1,0 +1,396 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-repeat: no-repeat;
+}
+
+header {
+  box-shadow: 0px 0px 10px #585656;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4%;
+  background-color: white;
+  z-index: 3;
+}
+header a {
+  text-decoration: none;
+  color: brown;
+  font-weight: 500;
+}
+header nav {
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+  border-right: 2px solid #434F3F;
+}
+
+#first-page {
+  display: grid;
+  grid-template-columns: 4% 3fr 1fr 4%;
+  grid-template-rows: 3fr 1fr;
+  min-height: 100vh;
+  background: linear-gradient(122.77deg, #FFFFFF 14.75%, #FAFEF8 56.28%, #D3DFD6 78.54%);
+}
+#first-page #question-div {
+  grid-column: 2/3;
+}
+#first-page #question-div h1 {
+  padding-top: 3%;
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Merriweather", serif;
+  letter-spacing: 0.2em;
+  word-spacing: 0.1em;
+  font-weight: 500;
+  color: #363E33;
+}
+#first-page .scroll-button {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  width: auto;
+}
+#first-page .scroll-button .btn {
+  background-color: #98514D;
+  border-radius: 4px;
+  padding: 5% 10%;
+  font-size: large;
+  cursor: pointer;
+  font-family: sans-serif;
+  box-shadow: 0 5px 15px -5px #00000070;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+
+.separator {
+  width: 100%;
+  height: 35px;
+  background-color: #2d4227;
+}
+
+.second-page {
+  background: radial-gradient(#FFFFFF 14.75%, #FAFEF8 56.28%, #D3DFD6 78.54%);
+  height: 100vh;
+  padding: 0 4%;
+}
+.second-page h1 {
+  color: #363E33;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  padding-top: 70px;
+  padding-bottom: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.second-page .container {
+  display: flex;
+  justify-content: space-between;
+}
+.second-page .icons {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.second-page .icons img {
+  width: 60px;
+  height: 60px;
+}
+.second-page .text-content {
+  height: auto;
+  width: 350px;
+  border: none;
+  background-color: #FFFFFF;
+  border-radius: 7px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 15px -5px #00000070;
+}
+.second-page .text-content h4 {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #98514D;
+  font-family: "Merriweather", serif;
+  font-size: 1.25rem;
+}
+.second-page .text-content p {
+  padding: 45px 20px 75px 20px;
+  font-size: 1rem;
+  word-spacing: 0.2em;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+#fabrica {
+  height: 65px;
+  margin-bottom: -5px;
+}
+
+.third-page {
+  padding: 10vh 4%;
+  height: 90vh;
+  background-image: url(../images/frame.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+.third-page h1 {
+  font-size: 2.5rem;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 126px;
+  color: #98514d;
+  padding-right: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.third-page .left-side {
+  width: 90%;
+  padding: 30px 2%;
+  flex: 2;
+}
+.third-page .left-side .first-box {
+  padding-bottom: 25px;
+  border-bottom: lightgray solid 1px;
+}
+.third-page .left-side .first-box p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 30px;
+  color: #434f3f;
+}
+.third-page .left-side .second-box {
+  padding: 10px 7%;
+}
+.third-page .left-side .second-box ul {
+  list-style-image: url(../images/vacuum-cleaner.png);
+}
+.third-page .left-side .second-box ul li {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 53px;
+  color: #98514d;
+}
+.third-page .left-side .second-box ul li span {
+  font-size: 10px;
+}
+.third-page .left-side .second-box span {
+  color: #98514d;
+  font-weight: bold;
+}
+.third-page .left-side .second-box span a {
+  text-decoration: none;
+  color: #98514d;
+}
+.third-page .right-side {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+.third-page .right-side .calculator {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  flex: 1;
+  padding: 10px 4%;
+  height: 450px;
+  border-radius: 5px;
+  position: relative;
+}
+.third-page .right-side .calculator select {
+  margin-left: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  display: flex;
+  color: black 0.8;
+  background-color: #e49393;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.third-page .right-side .calculator #suprafata-div {
+  display: flex;
+}
+.third-page .right-side .calculator label {
+  border-radius: 5px;
+  padding: 7px;
+  background: #e49393;
+  border: 1px solid #98514d;
+  box-sizing: border-box;
+}
+.third-page .right-side .calculator input {
+  background: #f2f2f2;
+  border: 1px solid #98514d;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 15px;
+}
+.third-page .right-side .calculator button {
+  color: #f2f2f2;
+  background-color: #98514d;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+.third-page .right-side .calculator #suma {
+  background-color: #f2f2f2;
+  border: 1px solid #98514d;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  height: 40px;
+}
+
+footer section {
+  padding: 18px 4%;
+  box-shadow: 0px 0px 10px #8b8989;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  text-align: center;
+}
+footer section img {
+  width: 25px;
+  height: 25px;
+}
+footer section a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1205px) {
+  html {
+    font-size: 50%;
+  }
+
+  nav {
+    font-size: 150%;
+  }
+
+  #first-page {
+    grid-template-columns: 4% 1fr 4%;
+    grid-template-rows: 2fr 2fr;
+  }
+  #first-page #question-div {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    text-align: center;
+    align-self: center;
+  }
+  #first-page .scroll-button {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    object-fit: cover;
+    justify-self: center;
+    align-self: center;
+  }
+  #first-page .scroll-button .btn {
+    padding: 10px;
+  }
+
+  .second-page {
+    height: auto;
+  }
+  .second-page h1 {
+    padding: 40px;
+    font-size: 200%;
+  }
+  .second-page .container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .second-page .container .text-content {
+    width: 300px;
+  }
+  .second-page .container .text-content h4 {
+    font-size: 2rem;
+  }
+  .second-page .container .text-content p {
+    padding: 40px;
+    font-size: 2rem;
+    letter-spacing: 0.2px;
+  }
+
+  .third-page {
+    flex-direction: column;
+    align-items: center;
+    background-image: cover;
+    padding-top: 0;
+    height: auto;
+  }
+  .third-page h1 {
+    font-size: 5rem;
+    border: none;
+    padding-right: 0;
+  }
+  .third-page .left-side {
+    border-right: none;
+  }
+  .third-page .left-side .first-box {
+    padding-top: 10px;
+  }
+  .third-page .left-side .first-box p {
+    text-align: center;
+    font-size: 1.75rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 20px;
+  }
+  .third-page .left-side .second-box {
+    width: 100%;
+    text-align: center;
+  }
+  .third-page .left-side .second-box ul {
+    padding-top: 40px;
+    list-style: none;
+  }
+  .third-page .left-side .second-box ul li {
+    width: auto;
+    font-size: 2rem;
+  }
+  .third-page .left-side .second-box p {
+    padding-top: 40px;
+    font-size: 1.5rem;
+    line-height: 2em;
+  }
+  .third-page .right-side {
+    flex: 2;
+    font-size: 170%;
+  }
+  .third-page .right-side .calculator button {
+    font-size: 2rem;
+  }
+}
